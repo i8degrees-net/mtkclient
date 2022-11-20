@@ -7,6 +7,7 @@ from PySide6.QtCore import Signal, QThread, Slot, Property
 from PySide6.QtWidgets import QFileDialog, QCheckBox
 from traceback import print_exception
 from mtkclient.config.payloads import pathconfig
+import mtkclient.Library.mtk_signals
 
 class TimeEstim:
     def calcProcessTime(self, starttime, cur_iter, max_iter):

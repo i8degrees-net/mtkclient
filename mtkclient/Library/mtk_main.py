@@ -146,7 +146,7 @@ class Main(metaclass=LogBase):
         self.args = args
         if not os.path.exists("logs"):
             os.mkdir("logs")
-
+        
     def close(self):
         sys.exit(0)
 

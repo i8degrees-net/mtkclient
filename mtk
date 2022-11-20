@@ -3,6 +3,7 @@
 # Licensed under GPLv3 License
 import argparse
 from mtkclient.Library.mtk_main import Main, metamodes
+import mtkclient.Library.mtk_signals
 
 info = "MTK Flash/Exploit Client V1.6.0 (c) B.Kerler 2018-2022"
 
@@ -810,5 +811,6 @@ if __name__ == '__main__':
     if cmd not in cmds:
         showcommands()
         exit(0)
-
+        
     mtk = Main(args).run(parser)
+    

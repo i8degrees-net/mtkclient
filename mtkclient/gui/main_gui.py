@@ -25,6 +25,8 @@ from PySide6.QtWidgets import (QAbstractScrollArea, QApplication, QCheckBox, QFr
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
+        if __name__ == '__main__':
+            app = QGuiApplication(sys.argv)
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
         MainWindow.setWindowModality(Qt.NonModal)
@@ -72,7 +74,7 @@ class Ui_MainWindow(object):
         self.actionLock_device = QAction(MainWindow)
         self.actionLock_device.setObjectName(u"actionLock_device")
         self.action_Quit = QAction(MainWindow)
-        self.action_Quit.setObjectName(u"action_Quit")
+        # self.action_Quit.setObjectName(u"action_Quit")
         self.centralwidget = QWidget(MainWindow)
         self.centralwidget.setObjectName(u"centralwidget")
         self.gridLayout_8 = QGridLayout(self.centralwidget)

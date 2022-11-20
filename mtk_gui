@@ -599,7 +599,7 @@ if __name__ == '__main__':
     win.setdevhandler(devhandler)
 
     # Run loop the app
-    app.exec()
+    sys.exit(app.exec())
     # Prevent thread from not being closed and call error end codes
     thread.terminate()
     thread.wait()
