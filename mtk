@@ -3,7 +3,7 @@
 # Licensed under GPLv3 License
 import argparse
 from mtkclient.Library.mtk_main import Main, metamodes
-import mtkclient.Library.mtk_signals
+import mtkclient.Library.signals
 
 info = "MTK Flash/Exploit Client V1.6.0 (c) B.Kerler 2018-2022"
 

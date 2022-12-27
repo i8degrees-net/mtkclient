@@ -1,5 +1,5 @@
 import signal
-import time
+# import time
  
 def handler(signum, frame):
 	print("Application is terminating... CTRL+C was signaled.")
